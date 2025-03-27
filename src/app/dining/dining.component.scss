@@ -1,0 +1,72 @@
+@import '../../styles/__variables';  
+// Ajusta la ruta según sea necesario
+
+.section-dining {
+  height: 100vh;
+}
+
+.subtitle-dining {
+  font-family: $font-family-threedary;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.container_dining_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.text-dinner {
+  font-family: $font-family-secundary;
+  font-size: 1.5rem;
+}
+
+.container-dining {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card-img {
+  border-radius: 20rem;
+}
+
+.card-img img {
+  width: 360px;
+  height: 450px;
+  border-radius: 5rem;
+  object-fit: cover;
+}
+
+/* Media Query para pantallas móviles (max-width: 480px) */
+@media (max-width: 480px) {
+  .section-dining {
+    height: auto; /* Permite que la sección se adapte al contenido */
+    padding: 1rem;
+  }
+
+  .subtitle-dining {
+    font-size: 2rem; /* Reducir el tamaño del título */
+  }
+
+  .container_dining_text {
+    margin: 1rem; /* Ajusta los márgenes para pantallas pequeñas */
+  }
+
+  .text-dinner {
+    font-size: 1.2rem; /* Reducir el tamaño del texto secundario */
+  }
+
+  .container-dining {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    gap: 1rem;
+  }
+
+  .card-img img {
+    width: 100%; /* Hace que la imagen ocupe el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 2rem; /* Ajusta el radio para pantallas pequeñas */
+  }
+}

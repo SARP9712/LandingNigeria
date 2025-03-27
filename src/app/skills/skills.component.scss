@@ -1,0 +1,105 @@
+@import '../../styles/__variables';  // Ajusta la ruta según sea necesario
+
+.section-resort {
+  margin: 10rem;  // Margen amplio para desktop
+}
+
+.contain-resort {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;  
+}
+
+.containFather {
+  font-size: 2rem;
+  font-family: $font-family-secundary;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid black;
+  height: 40%;
+  width: 45%;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.discover {
+  display: flex;
+  font-family: $font-family-secundary;
+  font-size: 1.2rem;
+}
+
+.btn-size {
+  font-size: 0.9rem;
+}
+
+.container-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.text-title {
+  font-family: $font-family-threedary;
+  font-weight: lighter;
+  font-size: 5rem;
+}
+
+#img-resort {
+  width: 600px;
+  height: 600px;
+}
+
+/* Media query para móviles pequeños */
+@media (max-width: 480px) {
+  /* Reducir márgenes en la sección general */
+  .section-resort {
+    margin: 2rem;
+  }
+
+  /* Organizar el contenedor en columna y reducir espacio */
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* Hacer que cada caja ocupe todo el ancho y ajuste su altura */
+  .box {
+    width: 100%;
+    height: auto;
+    border-left: none;          // Opcional: quitar la línea lateral
+    border-top: 4px solid black; // Opcional: ponerla arriba para separar secciones
+    padding: 1rem;
+  }
+  
+  /* Ajustar la imagen para que se adapte al ancho disponible */
+  #img-resort {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Reducir el tamaño del título y del texto secundario */
+  .text-title {
+    font-size: 3rem;
+  }
+
+  .discover{
+    font-size: 0.8rem;
+    padding: 20px;
+  }
+  
+  .containFather {
+    font-size: 1rem;
+    padding: 20px;
+    text-align: justify;
+  }
+}

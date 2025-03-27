@@ -1,0 +1,82 @@
+/* Estilos del header */
+@import '../../styles/__variables';  // Ajusta la ruta según sea necesario
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:$color-primary;
+    font-family: $font-family-secundary;
+    color: rgb(0, 0, 0);
+    font-size: $font-size-content;
+    width: auto;
+    flex-wrap: wrap;
+  }
+  
+  .logo img {
+    max-height: 40px; /* Ajusta el tamaño del logo */
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: $font-size-content;
+
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    
+  }
+  
+  .nav-menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-size: $font-size-content;
+  }
+  
+  // .nav-menu a:hover {
+  //   color: #f0a500; /* Color al pasar el mouse */
+  // }
+  
+  .user-area a {
+    color: white;
+    text-decoration: none;
+    font-size: $font-size-content;
+  }
+
+  .user-area{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .user-area a:hover {
+    // color: #f0a500;
+  }
+  
+  .btn-signup{
+    background-color: $color-signup;
+    border-radius: 15px;
+    padding: 20px;
+
+
+  }
+
+  @media (max-width: 480px) {
+
+    .header {
+      display: flex;
+      gap: 20px;
+      flex-direction: column;  /* Cambia la dirección del contenido a columna */
+      justify-content: center;
+    }
+  
+   
+  }
