@@ -62,3 +62,10 @@ button {
   object-fit: cover;
 }
  /* Arrow 1 */
+
+ @media (max-width:480px){
+  .Make{
+    font-size: 0.5rem;
+    padding: 5px 15px;
+  }
+ }

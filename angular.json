@@ -94,7 +94,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+  "node_modules/gsap/dist/gsap.min.js",
+  "node_modules/gsap/dist/ScrollTrigger.min.js"
+]
           }
         }
       }

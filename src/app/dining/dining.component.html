@@ -1,40 +1,28 @@
-
 <section class="section-dining">
-    <!-- <h1>Hola</h1> -->
-    <!-- titulo -->
-
     <div class="container-dining">
-        <div class="container_dining_text">
-            <h3 class="subtitle-dining" [innerHtml]="experience"> </h3>
-            <hr>
-            <span class="text-dinner" [innerHTML]="best"> </span>
-            <hr>
-            <div>
-                <span class="text-dinner" [innerHTML]="best"> </span>
-                <span> 2024 </span>            
-
-            </div>
+      <div class="container_dining_text">
+        <h3 #subtitle class="subtitle-dining" [innerHtml]="experience"></h3>
+        <hr>
+        <span #textDinner class="text-dinner" [innerHTML]="best"></span>
+        <hr>
+        <div>
+          <span #textDinner class="text-dinner" [innerHTML]="best"></span>
+          <span>2024</span>
         </div>
-        <!-- 1fr -->
-
-        <div class="card-img">
-           <img src="../../assets/iamges/wine.jpg" alt="">
-        </div>
-
-        <!-- 1fr -->
-
-        <div class="card-img">
-            <img src="../../assets/iamges/chef.jpg" alt="">
-        </div>
-
-        <div class="card-img"> 
-            <img src="../../assets/iamges/plate.jpg" alt="">
-        </div>
-        <!-- 1fr -->
+      </div>
+  
+      <!-- Imágenes con referencia -->
+      <div class="card-img" #image>
+        <img src="../../assets/iamges/wine.jpg" alt="">
+      </div>
+  
+      <div class="card-img" #image>
+        <img src="../../assets/iamges/chef.jpg" alt="">
+      </div>
+  
+      <div class="card-img" #image>
+        <img src="../../assets/iamges/plate.jpg" alt="">
+      </div>
     </div>
-
-
-
-
-
-</section>
+  </section>
+  

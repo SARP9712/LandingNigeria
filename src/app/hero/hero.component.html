@@ -2,28 +2,28 @@
     <div class="hero-content">
 
       <div class="contain-firtline">
-        <h1 class="size">{{ Title }}</h1>
-        <div class="content-text" [innerHTML]="firstContain"></div>
+        <h1 class="size" #title1>{{ Title }}</h1>
+        <div #text class="content-text" [innerHTML]="firstContain"></div>
 
       </div>
 
       <div class="contain-secondline">
-        <div class="content-text" [innerHTML]="secondContain"></div>
-        <h1  class="size"> {{ subtitle }}</h1>
+        <div #text class="content-text" [innerHTML]="secondContain"></div>
+        <h1  class="size" #title2> {{ subtitle }}</h1>
       </div>
 
       <div class="img-1">
 
         <div class="container-img">
 
-          <img src="assets/iamges/mountain-1.jpg" alt="Montaña">
+          <img #text src="assets/iamges/mountain-1.jpg" alt="Montaña">
         </div>
 
         <div class="container-img">
-          <img src="assets/iamges/mountain-2.jpg" alt="Montaña-2">
+          <img #text src="assets/iamges/mountain-2.jpg" alt="Montaña-2">
 
         </div>
-        <button class="Make">
+        <button #text class="Make">
           {{ Reservation }}
 
           <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +35,7 @@
      
       </div>
 
-      <div class="img-2">
+      <div #text class="img-2">
         <div class="contain-explorer">
           <div class="text-explorer" [innerHTML]="explorer">
 

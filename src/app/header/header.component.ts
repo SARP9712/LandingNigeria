@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild, ViewChildren } from '@angular/core';
+import { gsap } from 'gsap';
 
 @Component({
   selector: 'app-header',
-  imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
 
+  @ViewChild('headerElement') header!: ElementRef; // Corrige 'viewChild' a 'ViewChild'
 
-
+  ngAfterViewInit(): void {  // Implementa ngAfterViewInit
+    // Animación con GSAP
+    gsap.from(this.header.nativeElement, {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      ease: 'power2.out'
+    });
+  }
 }
